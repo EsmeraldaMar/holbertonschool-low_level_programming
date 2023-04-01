@@ -4,3 +4,4 @@
 3) it compiles the C file and creates an exectuable file named cisfun
 4) it is a c program the prints "Programming is like building a multilingual puzzle" then a new line.
 5) it is a c program that prints with proper grammar, but the outcome is a piece of art, then a new line.
+6) it prints the size of various types on the computer it is compiled and run on (bits and bytes).
