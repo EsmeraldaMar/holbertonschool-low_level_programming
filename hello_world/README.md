@@ -1,1 +1,2 @@
 0) It runs a c source file to preprocessing without compiling and save to another file, c file name will be saved in variable $CFILE and output should be saved in file c.
+1) it compiles a c file but does not link, should be named the same as c file but must end with extension o not c
