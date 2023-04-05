@@ -2,9 +2,9 @@
 /**
  * main - Entry Point
  *
- * Description - prints single digit numbers from 0 to base 10
+ * description - 'prints single digit numbers from 0 to base 10'
  *
- * return: 0
+ * Return: 0
  */
 int main(void)
 {
