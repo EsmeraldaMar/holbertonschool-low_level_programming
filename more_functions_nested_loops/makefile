@@ -1,9 +1,9 @@
 CC 	= gcc
-SRC	= 3-print_numbers.c\
-	  3-main.c\
+SRC	= 4-print_most_numbers.c\
+	  4-main.c\
 	  _putchar.c
 OBJ	= $(SRC:.c=.o)
-NAME	= 3-print_numbers
+NAME	= 4-print_most_numbers
 RM	= rm -f
 CFLAGS	= -Wall -Werror -Wextra -pedantic -std=gnu89
 all: $(OBJ)
