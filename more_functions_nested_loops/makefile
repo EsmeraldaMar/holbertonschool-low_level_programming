@@ -1,8 +1,8 @@
 CC 	= gcc
-SRC	= 1-isdigit.c\
-	  1-main.c
+SRC	= 2-mul.c\
+	  2-main.c
 OBJ	= $(SRC:.c=.o)
-NAME	= 1-isdigit
+NAME	= 2-mul
 RM	= rm -f
 CFLAGS	= -Wall -Werror -Wextra -pedantic -std=gnu89
 all: $(OBJ)
