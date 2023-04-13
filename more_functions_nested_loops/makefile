@@ -1,9 +1,9 @@
 CC 	= gcc
-SRC	= 6-print_line.c\
-	  6-main.c\
+SRC	= 7-print_diagonal.c\
+	  7-main.c\
 	  _putchar.c
 OBJ	= $(SRC:.c=.o)
-NAME	= 6-lines
+NAME	= 7-diagonals
 RM	= rm -f
 CFLAGS	= -Wall -Werror -Wextra -pedantic -std=gnu89
 all: $(OBJ)
