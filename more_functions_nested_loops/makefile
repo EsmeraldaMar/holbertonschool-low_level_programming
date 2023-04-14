@@ -1,9 +1,9 @@
 CC 	= gcc
-SRC	= 7-print_diagonal.c\
-	  7-main.c\
+SRC	=8-print_square.c \
+	  8-main.c\
 	  _putchar.c
 OBJ	= $(SRC:.c=.o)
-NAME	= 7-diagonals
+NAME	= 8-squares
 RM	= rm -f
 CFLAGS	= -Wall -Werror -Wextra -pedantic -std=gnu89
 all: $(OBJ)
