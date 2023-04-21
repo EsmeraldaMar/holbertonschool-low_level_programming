@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _puts - it prints a string then a new line to stdout
- * @str: is pointer ot variable to print string
+ * @str: is pointer to variable to print string
  *
  * Return: void
  */
