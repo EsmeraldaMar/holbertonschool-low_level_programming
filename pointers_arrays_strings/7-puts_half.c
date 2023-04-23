@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * puts_half - it prints the second half of a string
  * @str: string to be printed
  *
@@ -16,7 +16,6 @@ void puts_half(char *str)
 	while (str[i] != '\0')
 	{
 		i++;
-	
 	}
 	while (str[n] != '\0')
 	{
