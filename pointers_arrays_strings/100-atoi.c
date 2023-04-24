@@ -20,8 +20,6 @@ int _atoi(char *s)
 	while (s[i] != '\0')
 	{
 		if (s[i] == '-')
-			sign = sign - 1;
-		else if (s[i] == '+')
 			sign = sign + 1;
 		if (s[i] >= '0' && s[i] <= '9')
 		{
@@ -29,7 +27,7 @@ int _atoi(char *s)
 			{
 				if (result > (2147483640 - s[i] - 48) / 10)
 				{
-					if (sign >= 0)
+					if (sign % 2 == 0)
 						result = INT_MAX;
 					else
 						result = INT_MIN;
@@ -38,7 +36,7 @@ int _atoi(char *s)
 				result = result * 10 + (s[i] - 48);
 				i++;
 			}
-			if (sign < 0)
+			if (sign % 2 == 1)
 				result = result * -1;
 			return (result);
 		}
