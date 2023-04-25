@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * string_toupper - changes all lowercase letters to uppercase
- * @s: string to be changed to uppercase
+ * cap_string - capitalise all words of a string
+ * @s: string to be capitalised
  *
  * Return: converted string
  */
-char *string_toupper(char *s)
+char *cap_string(char *s)
 {
 	int i;
 
@@ -15,7 +15,7 @@ char *string_toupper(char *s)
 	{
 		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			s[i] = s[i] - 32;
+			s[i] = s[i] - ('a' - 'A');
 		}
 		i++;
 	}
