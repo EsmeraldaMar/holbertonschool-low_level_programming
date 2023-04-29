@@ -19,3 +19,13 @@ MORE POINTERS AND ARRAYS:
 6) it capitilizes all words in a string.
 7) it is a function that encodes a string to 1337.
 
+EVEN MORE POINTERS AND ARRAYS:
+0) it fills memory with a constant byte.
+1) it copies the memory area from 'src' to 'dest'
+2) it checks and locates for a character in a string.
+3) it takes the length of a prefix substring.
+4) it looks for any string in any set of bytes.
+5) it looks for a substring 'needle' in the string 'haystack'.
+6) it prints out a chessboard.
+7) it prints the result of the sum of two diagonals of a square matrix of integers.
+
