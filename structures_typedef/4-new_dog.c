@@ -1,34 +1,11 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * _strdup - copies string 
- * @str: string to be copied
- * Return: char *
- */
-char *_strdup(char *str)
-{
-	int i = 0;
-	char *new_str;
-
-	while (str[i] != '\0')
-		i++;
-	new_str = malloc(sizeof(char) * (i + 1));
-	i = 0;
-	while (str[i] != '\0')
-	{
-		new_str[i] = str[i];
-		i++;
-	}
-	return (new_str);
-	
-}
-
-/**
- * dog_t - creates a new doggo
+ * new_dog - creates a new doggo
  * @name: name of doggo
  * @age: age of doggo
  * @owner: name owner of doggo
- * Return: void
+ * Return: dog_t
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -56,8 +33,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog);
 		return (NULL);
 	}
-	dog->name = _strdup(name);
+	i = 0;
+	while (name[i] != '\0')
+	{
+		dog->name[i] = name[i];
+		i++;
+	}
 	dog->age = age;
-	dog->owner = _strdup(owner);
+	i = 0;
+	while (owner[i] != '\0')
+	{
+		dog->owner[i] = owner[i];
+		i++;
+	}
 	return (dog);
 }
