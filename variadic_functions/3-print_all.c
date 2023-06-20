@@ -9,30 +9,24 @@ void print_all(const char * const format, ...)
 {
 	int i = 0;
 	int j = 0;
-	char c;
 	char *str;
-	int integer;
-	float f;
 	va_list box;
 
 	va_start(box, format);
-	while (format[i])
+	while (format[i] && format)
 	{
 		switch (format[i])
 		{
 			case 'c':
-				c = va_arg(box, int);
-				printf("%c", c);
+				printf("%c", va_arg(box, int));
 				j = 1;
 				break;
 			case 'i':
-				integer = va_arg(box, int);
-				printf("%d", integer);
+				printf("%d", va_arg(box, int));
 				j = 1;
 				break;
 			case 'f':
-				f = va_arg(box, double);
-				printf("%f", f);
+				printf("%f", va_arg(box, double));
 				j = 1;
 				break;
 			case 's':
