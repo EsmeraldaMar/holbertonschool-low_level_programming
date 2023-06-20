@@ -37,11 +37,13 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				str = va_arg(box, char*);
-				if (str == NULL)
-					printf("(nil)");
-				else
-					printf("%s", str);
 				j = 1;
+				if (str == NULL)
+				{
+					printf("(nil)");
+					break;
+				}
+				printf("%s", str);
 				break;
 		}
 		if (format[i + 1] && j == 1)
