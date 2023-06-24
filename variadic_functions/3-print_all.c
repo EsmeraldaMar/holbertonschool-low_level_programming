@@ -3,40 +3,51 @@
 /**
  * printf_char - Prints a character
  * @box: box to find the character
+ * Return: 0
  */
-void printf_char(va_list box)
+int printf_char(va_list box)
 {
 	printf("%c", va_arg(box, int));
+	return (0);
 }
 /**
  * printf_int - Prints an integer
  * @box: box to find the integer
+ * Return: 0
  */
-void printf_int(va_list box)
+int printf_int(va_list box)
 {
 	printf("%d", va_arg(box, int));
+	return (0);
 }
 /**
  * printf_float - Prints a float
  * @box: box to find the float
+ * Return: 0
  */
-void printf_float(va_list box)
+int printf_float(va_list box)
 {
 	printf("%f", va_arg(box, double));
+	return (0);
 }
 
 /**
  * printf_string - Prints a string
  * @box: box to find the string
+ * Return: 0
  */
-void printf_string(va_list box)
+int printf_string(va_list box)
 {
 	char *str;
 
 	str = va_arg(box, char*);
 	if (str == NULL)
+	{
 		printf("(nil)");
+		return (0);
+	}
 	printf("%s", str);
+	return (0);
 }
 
 /**
