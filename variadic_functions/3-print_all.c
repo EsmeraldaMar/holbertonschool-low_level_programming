@@ -67,10 +67,10 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				printf_struct[j].f(box);
+				separator = ", ";
 			}
 			j++;
 		}
-		separator = ", ";
 		j = 0;
 		i++;
 	}
