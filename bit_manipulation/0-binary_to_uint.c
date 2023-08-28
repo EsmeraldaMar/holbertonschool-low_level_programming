@@ -7,7 +7,7 @@
  * Return: converted binary
  */
 unsigned int binary_to_uint(const char *b)
-{	
+{
 	unsigned int num = 0;
 
 	if (b)
