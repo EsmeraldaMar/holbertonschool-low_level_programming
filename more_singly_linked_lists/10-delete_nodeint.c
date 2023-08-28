@@ -3,7 +3,7 @@
 /**
  * delete_nodeint_at_index - delete element at index
  * @head: head of list
- * #index: index to delete
+ * @index: index to delete
  *
  * Return: deleted element
  */
